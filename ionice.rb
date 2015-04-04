@@ -4,7 +4,7 @@ class Ionice < Formula
   version "20120202"
 
   def install
-    system "#{ENV.cc} #{ENV.cflags} -o ionice ionice.c"
+    system ENV.cc, ENV.cflags, "-o", "ionice", "ionice.c"
     bin.install "ionice"
   end
 
