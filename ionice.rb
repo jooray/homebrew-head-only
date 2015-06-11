@@ -1,7 +1,7 @@
 class Ionice < Formula
   homepage "https://github.com/elmarb/ionice"
-  url "https://github.com/elmarb/ionice.git", :revision => "63539195ba6aa082376a53b09a47b33c25a9b204"
-  version "20120202"
+  desc "start processes with lower IO priority on Mac OS X"
+  url "https://github.com/elmarb/ionice.git"
 
   def install
     system ENV.cc, ENV.cflags, "-o", "ionice", "ionice.c"
