@@ -1,6 +1,6 @@
 class Ionice < Formula
-  homepage "https://github.com/elmarb/ionice"
   desc "start processes with lower IO priority on Mac OS X"
+  homepage "https://github.com/elmarb/ionice"
   url "https://github.com/elmarb/ionice.git"
 
   def install
