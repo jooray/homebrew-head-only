@@ -1,7 +1,7 @@
 class Ionice < Formula
   desc "start processes with lower IO priority on Mac OS X"
   homepage "https://github.com/elmarb/ionice"
-  url "https://github.com/elmarb/ionice.git"
+  head "https://github.com/elmarb/ionice.git"
 
   def install
     system ENV.cc, ENV.cflags, "-o", "ionice", "ionice.c"
